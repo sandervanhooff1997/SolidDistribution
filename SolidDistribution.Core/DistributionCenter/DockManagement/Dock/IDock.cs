@@ -1,8 +1,9 @@
-﻿using SolidDistribution.Core.DistributionCenter.DockManagement.Dock.DockStages;
+﻿using SolidDistribution.Core.DistributionCenter.DockManagement.Dock.DockStage;
 using SolidDistribution.Core.Vehicle.DistributionVehicle;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace SolidDistribution.Core.DistributionCenter.DockManagement.Dock
 {
@@ -12,14 +13,12 @@ namespace SolidDistribution.Core.DistributionCenter.DockManagement.Dock
     /// <typeparam name="T"></typeparam>
     public interface IDock<out T> : IDockStages where T : IDistributionVehicle
     {
-        void Dock(IDistributionVehicle vehicle);
-        
-        bool IsAllowedToDock(IDistributionVehicle vehicle);
+        bool IsAllowedToDock { get; }
 
-        IDistributionVehicle UnDock();
+        T UnDock();
 
-        bool IsAllowedToUnDock(IDistributionVehicle vehicle);
+        bool IsAllowedToUnDock { get; }
 
-        IDistributionVehicle Vehicle { get; }
+        T Vehicle { get; }
     }
 }

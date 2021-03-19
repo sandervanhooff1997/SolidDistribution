@@ -6,10 +6,11 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart.CoolingCart
 {
-    /// <summary>
-    /// A cart that stores only cooling boxes
-    /// </summary>
-    public interface ICoolingCart : ICart<IBoxStorage<ICoolBox>>
+    public abstract class CoolingCart : BaseCart<IBoxStorage<ICoolBox>>
     {
+        public CoolingCart()
+        {
+
+        }
     }
 }

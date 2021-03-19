@@ -1,5 +1,5 @@
 ﻿using SolidDistribution.Core.Grocery;
-using SolidDistribution.Core.Storage.GroceryStorage;
+using SolidDistribution.Core.Storage.Multiple.GroceryStorage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace SolidDistribution.Core.Bag
             Type type = typeof(T);
             sb.Append($"\nA bag with {Count} {type.Name}:");
 
-            Groceries.ToList().ForEach(g => sb.Append($"\n-{g.Name}"));
+            Items.ToList().ForEach(g => sb.Append($"\n-{g.Name}"));
 
             return sb.ToString();
         }

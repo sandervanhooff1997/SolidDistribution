@@ -5,14 +5,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SolidDistribution.Core.Storage.GroceryStorage
+namespace SolidDistribution.Core.Storage.Multiple.GroceryStorage
 {
     /// <summary>
     /// A storage to store groceries
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public interface IGroceryStorage<out T> : IStorage, ICount where T : IGrocery
+    public interface IGroceryStorage<out T> : IMultipleItemsStorage<T>, ICount where T : IGrocery
     {
-        IEnumerable<T> Groceries { get; }
+
     }
 }

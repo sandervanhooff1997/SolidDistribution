@@ -7,12 +7,11 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart
 {
-    /// <summary>
-    /// A cart that stores boxes
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public interface ICart<out T> : ICartStorage<T> where T : IBoxStorage<IBox>
+    public abstract class BaseCart<T> : BaseCartStorage<T>, ICart<T> where T : IBoxStorage<IBox>
     {
+        public BaseCart()
+        {
 
+        }
     }
 }

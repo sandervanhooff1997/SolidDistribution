@@ -6,10 +6,11 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart.GenericCart
 {
-    /// <summary>
-    /// A cart that stores all types of boxes
-    /// </summary>
-    public interface IGenericCart : ICart<IBoxStorage<IBox>>
+    public abstract class GenericCart : BaseCart<IBoxStorage<IBox>>
     {
+        public GenericCart()
+        {
+
+        }
     }
 }

@@ -14,24 +14,7 @@ namespace SolidDistribution.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var hg = new PlastigBagGrocery("Hg", 500);
-            var plasticBag = new PlasticBag();
-            while (plasticBag.AllowedToAdd)
-                plasticBag.Add(hg);
-
-            var olvarit = new NfcBagGrocery("Olvarit", 500);
-            var nfcBag = new NfcBag();
-            while (nfcBag.AllowedToAdd)
-                nfcBag.Add(olvarit);
-
-            var bags = new List<IBag<IGrocery>>();
-            bags.Add(plasticBag);
-            bags.Add(nfcBag);
-
-            foreach (var b in bags)
-            {
-                Console.WriteLine(b.ToString());
-            }     
+                
         }
     }
 }

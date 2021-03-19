@@ -10,7 +10,11 @@ namespace SolidDistribution.Core.Vehicle
     public interface IVehicle
     {
         void Drive();
+        void Stop();
+
+        bool AllowedToDrive { get; }
 
         bool Driving { get; }
+
     }
 }

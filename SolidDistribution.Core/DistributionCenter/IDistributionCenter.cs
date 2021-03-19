@@ -34,7 +34,7 @@ namespace SolidDistribution.Core.DistributionCenter
         IEnumerable<IRegularCart> RegularCarts { get; }
 
         /// <summary>
-        /// All carts that have mixed boxes (freezer + cooling + regular)
+        /// All carts that have mixed boxes
         /// These carts are distributed to the customer
         /// </summary>
         IEnumerable<IGenericCart> GenericCarts { get; }

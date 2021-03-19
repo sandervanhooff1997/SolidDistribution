@@ -6,10 +6,11 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart.RegularCart
 {
-    /// <summary>
-    /// A cart that stores only regular boxes
-    /// </summary>
-    public interface IRegularCart : ICart<IBoxStorage<IRegularBox>>
+    public abstract class RegularCart : BaseCart<IBoxStorage<IRegularBox>>
     {
+        public RegularCart()
+        {
+
+        }
     }
 }

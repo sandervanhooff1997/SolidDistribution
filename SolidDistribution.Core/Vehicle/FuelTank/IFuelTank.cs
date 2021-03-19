@@ -9,10 +9,18 @@ namespace SolidDistribution.Core.Vehicle.FuelTank
     /// </summary>
     public interface IFuelTank
     {
-        double Capacity { get; }
+        /// <summary>
+        /// The fuel capacity in liters
+        /// </summary>
+        double FuelCapacity { get; }
 
-        double CurrentFuel { get; }
+        /// <summary>
+        /// The current fuel in liters
+        /// </summary>
+        double CurrentFuel { get; set; }
 
         bool MustBeRefueled { get; }
+
+        bool FuelTankEmpty { get; }
     }
 }

@@ -5,13 +5,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SolidDistribution.Core.Storage.BagStorage
+namespace SolidDistribution.Core.Storage.Multiple.BagStorage
 {
     /// <summary>
     /// A storage to store a bag of groceries
     /// </summary>
-    public interface IBagStorage<out T> : IStorage, ICount where T : IBag<IGrocery>
+    public interface IBagStorage<out T> : IMultipleItemsStorage<T>, ICount where T : IBag<IGrocery>
     {
-        IEnumerable<T> Bags { get; }
+
     }
 }

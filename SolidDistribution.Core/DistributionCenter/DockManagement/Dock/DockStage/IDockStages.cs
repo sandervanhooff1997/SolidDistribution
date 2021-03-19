@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SolidDistribution.Core.DistributionCenter.DockManagement.Dock.DockStages
+namespace SolidDistribution.Core.DistributionCenter.DockManagement.Dock.DockStage
 {
     /// <summary>
     /// Different stages a dock van have

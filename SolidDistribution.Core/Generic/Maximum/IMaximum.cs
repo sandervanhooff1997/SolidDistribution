@@ -9,7 +9,7 @@ namespace SolidDistribution.Core.Generic.Maximum
     /// </summary>
     public interface IMaximum
     {
-        int Maximum { get; set; }
+        int Maximum { get; }
 
         bool AllowedToAdd { get; }
     }
