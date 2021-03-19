@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidDistribution.Core", "SolidDistribution.Core\SolidDistribution.Core.csproj", "{5433FAF2-3C9C-4294-B643-656ED734E730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidDistribution.Console", "SolidDistribution.Console\SolidDistribution.Console.csproj", "{3FF73B54-56E1-4047-ABFB-205677224857}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5433FAF2-3C9C-4294-B643-656ED734E730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5433FAF2-3C9C-4294-B643-656ED734E730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5433FAF2-3C9C-4294-B643-656ED734E730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5433FAF2-3C9C-4294-B643-656ED734E730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF73B54-56E1-4047-ABFB-205677224857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF73B54-56E1-4047-ABFB-205677224857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF73B54-56E1-4047-ABFB-205677224857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF73B54-56E1-4047-ABFB-205677224857}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CA6918E-806F-481C-A2EA-331AB4CA9C2A}
+	EndGlobalSection
+EndGlobal
