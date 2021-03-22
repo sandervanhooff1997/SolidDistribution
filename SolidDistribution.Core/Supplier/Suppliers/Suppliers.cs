@@ -6,7 +6,7 @@ namespace SolidDistribution.Core.Supplier.Suppliers
 {
     public enum Suppliers
     {
-        SupplierA,
-        SupplierB
+        SupplierA = 0,
+        SupplierB = 1
     }
 }

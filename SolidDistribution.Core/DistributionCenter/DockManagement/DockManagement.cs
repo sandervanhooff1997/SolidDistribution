@@ -24,5 +24,10 @@ namespace SolidDistribution.Core.DistributionCenter.DockManagement
             docks.Add(dock);
             Docks = docks;
         }
+
+        public IEnumerable<IDock<IDistributionVehicle>> GetDocks(Type dockType)
+        {
+            return Docks.Where(d => dockType == d.GetType());
+        }
     }
 }

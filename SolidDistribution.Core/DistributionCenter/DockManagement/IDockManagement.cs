@@ -13,5 +13,7 @@ namespace SolidDistribution.Core.DistributionCenter.DockManagement
     public interface IDockManagement : ICount
     {
         IEnumerable<IDock<IDistributionVehicle>> Docks { get; }
+
+        IEnumerable<IDock<IDistributionVehicle>> GetDocks(Type dock);
     }
 }

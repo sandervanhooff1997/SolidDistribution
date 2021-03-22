@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart.CoolingCart
 {
-    public abstract class CoolingCart : BaseCart<IBoxStorage<ICoolBox>>
+    public class CoolingCart : BaseCart<IBoxStorage<ICoolBox>>, ICoolingCart
     {
         public CoolingCart()
         {

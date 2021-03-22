@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart.RegularCart
 {
-    public abstract class RegularCart : BaseCart<IBoxStorage<IRegularBox>>
+    public class RegularCart : BaseCart<IBoxStorage<IRegularBox>>, IRegularCart
     {
         public RegularCart()
         {

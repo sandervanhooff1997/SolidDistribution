@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SolidDistribution.Core.Cart.FreezerCart
 {
-    public abstract class FreezerCart : BaseCart<IBoxStorage<IFreezerBox>>
+    public class FreezerCart : BaseCart<IBoxStorage<IFreezerBox>>, IFreezerCart
     {
         public FreezerCart()
         {

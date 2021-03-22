@@ -27,6 +27,8 @@ namespace SolidDistribution.Core.Storage.Multiple
 
         public void Add(T item)
         {
+            if (!AllowedToAdd) throw new Exception("Maximum reached.");
+
             var items = Items.ToList();
             items.Add(item);
             Items = items;

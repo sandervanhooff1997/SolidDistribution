@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidDistribution.Core", "SolidDistribution.Core\SolidDistribution.Core.csproj", "{5433FAF2-3C9C-4294-B643-656ED734E730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolidDistribution.Console", "SolidDistribution.Console\SolidDistribution.Console.csproj", "{3FF73B54-56E1-4047-ABFB-205677224857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolidDistribution.Console", "SolidDistribution.Console\SolidDistribution.Console.csproj", "{3FF73B54-56E1-4047-ABFB-205677224857}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

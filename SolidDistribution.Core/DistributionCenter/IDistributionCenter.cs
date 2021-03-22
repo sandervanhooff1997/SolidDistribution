@@ -3,6 +3,9 @@ using SolidDistribution.Core.Cart.FreezerCart;
 using SolidDistribution.Core.Cart.GenericCart;
 using SolidDistribution.Core.Cart.RegularCart;
 using SolidDistribution.Core.DistributionCenter.DockManagement;
+using SolidDistribution.Core.Vehicle.DistributionVehicle;
+using SolidDistribution.Core.Vehicle.DistributionVehicle.DeliveryCar;
+using SolidDistribution.Core.Vehicle.DistributionVehicle.SupplierTruck;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,6 +20,10 @@ namespace SolidDistribution.Core.DistributionCenter
         string Name { get; }
 
         IDockManagement DockManagement { get; }
+
+        IEnumerable<IDeliveryCar> DeliveryCars { get; }
+
+        IEnumerable<ISupplierTruck> SupplierTrucks { get; }
 
         /// <summary>
         /// All freezer carts stored in a freezy freezer

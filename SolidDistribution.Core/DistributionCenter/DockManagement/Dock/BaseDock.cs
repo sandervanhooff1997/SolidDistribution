@@ -16,7 +16,7 @@ namespace SolidDistribution.Core.DistributionCenter.DockManagement.Dock
 
         public T Vehicle { get; private set; }
 
-        public DockStages DockStage { get; set; }
+        public DockStages DockStage { get; set; } = DockStages.Empty;
 
         public bool IsEmpty => DockStage == DockStages.Empty;
 

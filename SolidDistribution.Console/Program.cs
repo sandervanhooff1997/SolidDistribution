@@ -1,4 +1,5 @@
-﻿using SolidDistribution.Core.Bag;
+﻿using SolidDistribution.Console;
+using SolidDistribution.Core.Bag;
 using SolidDistribution.Core.Bag.NFCBag;
 using SolidDistribution.Core.Bag.PlasticBag;
 using SolidDistribution.Core.Grocery;
@@ -14,7 +15,7 @@ namespace SolidDistribution.ConsoleApp
     {
         static void Main(string[] args)
         {
-                
+            DataSeeder.Seed();
         }
     }
 }
